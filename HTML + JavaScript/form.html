@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registo</title>
+    <script type="text/javascript" src="func.js"></script>
+</head>
+<body>
+    <form action="#" method="#">
+        <div>
+            <label onmouseover="alert('O nome deve conter pelo menos 10 caracteres.')" for="nome">Nome: </label>
+            <input onkeyup="validaNome()" type="text" id="nome" name="nome">
+        </div>
+        <br>
+        <div>
+            <label onmouseover="alert('O telefone deve conter exatamente 9 dígitos numéricos.')" for="phone">Telefone: </label>
+            <input onkeyup="validaTel()" type="tel" id="phone">
+        </div>
+        <br>
+        <div>
+            <label onmouseover="alert('A senha deve conter pelo menos 8 dígitos.')" for="pass">Senha: </label>
+            <input onkeyup="validaPass()" type="password" id="pass">
+        </div>
+        <br>
+        <div>
+            <label onmouseover="alert('As duas senhas deverão ser iguais.')" for="passConf">Confirme sua senha: </label>
+            <input onkeyup="validaPass()" type="password" id="passConf">
+        </div>
+    </form>
+</body>
+</html>
