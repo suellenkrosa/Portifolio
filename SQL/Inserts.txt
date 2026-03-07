@@ -1,0 +1,42 @@
+CLIENTE
+id nome apelido nif telefone
+1 Bruno Fonseca 251789123 912334566
+2 Carla Mendes 245678912 934785112
+3 Ricardo Matos 267891234 913455667
+4 Sandra Lopes 276541890 967854321
+5 Hugo Amaral 223445667 925478963
+
+VEÍCULO
+matricula marca modelo id_cliente_fk
+AA-10-BC Renault Clio 1
+BB-22-CD Peugeot 208 2
+CC-33-DE BMW Série 1 3
+DD-44-EF Opel Astra 4
+EE-55-FG Audi A3 5
+
+SERVIÇO
+cod nome preco
+S01 Mudança de Óleo 45.00
+S02 Revisão Completa 120.00
+S03 Alinhamento de Direção 35.00
+S04 Troca de Pastilhas 75.00
+
+INSERT INTO cliente (nome, apelido, nif, telefone)
+VALUES('Bruno', 'Fonseca', 251789123, 912334566),
+('Carla', 'Mendes', 245678912, 934785112),
+('Ricardo', 'Matos', 267891234, 913455667),
+('Sandra', 'Lopes', 276541890, 967854321),
+('Hugo', 'Amaral', 223445667, 925478963);
+
+INSERT INTO veiculo (matricula, marca, modelo, id_cliente_fk)
+VALUES ('AA-10-BC', 'Renault', 'Clio', 1),
+('BB-22-CD', 'Peugeot', 208, 2),
+('CC-33-DE', 'BMW', 'Série 1', 3),
+('DD-44-EF', 'Opel', 'Astra', 4),
+('EE-55-FG', 'Audi', 'A3', 5);
+
+INSERT INTO servico (cod, nome, preco)
+VALUES ('S01', 'Mudança de Óleo', 45.00),
+('S02', 'Revisão Completa', 120.00),
+('S03', 'Alinhamento de Direção', 35.00),
+('S04', 'Troca de Pastilhas', 75.00);
